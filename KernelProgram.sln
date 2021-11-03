@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KernelProgram", "KernelProgram\KernelProgram.vcxproj", "{58DF947F-D991-474A-9BBB-4197BA864627}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreateDevice", "CreateDevice\CreateDevice.vcxproj", "{F17336FD-4055-4A2E-85F1-481930BCD06F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -41,6 +43,30 @@ Global
 		{58DF947F-D991-474A-9BBB-4197BA864627}.Release|x86.ActiveCfg = Release|Win32
 		{58DF947F-D991-474A-9BBB-4197BA864627}.Release|x86.Build.0 = Release|Win32
 		{58DF947F-D991-474A-9BBB-4197BA864627}.Release|x86.Deploy.0 = Release|Win32
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|ARM.Build.0 = Debug|ARM
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|ARM64.Build.0 = Debug|ARM64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|x64.ActiveCfg = Debug|x64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|x64.Build.0 = Debug|x64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|x64.Deploy.0 = Debug|x64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|x86.ActiveCfg = Debug|Win32
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|x86.Build.0 = Debug|Win32
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Debug|x86.Deploy.0 = Debug|Win32
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|ARM.ActiveCfg = Release|ARM
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|ARM.Build.0 = Release|ARM
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|ARM.Deploy.0 = Release|ARM
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|ARM64.ActiveCfg = Release|ARM64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|ARM64.Build.0 = Release|ARM64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|ARM64.Deploy.0 = Release|ARM64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|x64.ActiveCfg = Release|x64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|x64.Build.0 = Release|x64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|x64.Deploy.0 = Release|x64
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|x86.ActiveCfg = Release|Win32
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|x86.Build.0 = Release|Win32
+		{F17336FD-4055-4A2E-85F1-481930BCD06F}.Release|x86.Deploy.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
