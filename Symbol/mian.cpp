@@ -1,6 +1,7 @@
-﻿#include <ntddk.h>
+#include <ntddk.h>
 
 #define DEVICE_NAME L"\\DEVICE\\MyDevice"
+#define DRIVER_SYMBOLLINK_NAME L"\\??\\MySymbolLinkName"
 
 void SampleUnload(_In_ PDRIVER_OBJECT DriverObject)
 {
@@ -24,6 +25,17 @@ NTSTATUS createDevice(PDRIVER_OBJECT obj)
     return status;
 }
 
+NTSTATUS createSymbolLink()
+{
+    NTSTATUS status = STATUS_SUCCESS;
+    UNICODE_STRING SymbolLinkName;
+    RtlInitUnicodeString(&SymbolLinkName, DRIVER_SYMBOLLINK_NAME);
+    UNICODE_STRING deviceName;
+    RtlInitUnicodeString(&deviceName, DEVICE_NAME);
+    status = IoCreateSymbolicLink(&SymbolLinkName, &deviceName);
+    return status;
+}
+
 extern "C"
 NTSTATUS DriverEntry(_In_ PDRIVER_OBJECT DriverObject, _In_ PUNICODE_STRING RegistryPath)
 {
@@ -34,6 +46,10 @@ NTSTATUS DriverEntry(_In_ PDRIVER_OBJECT DriverObject, _In_ PUNICODE_STRING Regi
     if (createDevice(DriverObject) == STATUS_SUCCESS)
     {
         KdPrint(("Create Device SUCCESS !"));
+        if (createSymbolLink() == STATUS_SUCCESS)
+        {
+            KdPrint(("Create SymbolLink SUCCESS !"));
+        }
     }
     KdPrint(("Sample driver initialized successfully\n"));
     return STATUS_SUCCESS;

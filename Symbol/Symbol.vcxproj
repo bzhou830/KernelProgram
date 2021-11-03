@@ -35,14 +35,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F17336FD-4055-4A2E-85F1-481930BCD06F}</ProjectGuid>
+    <ProjectGuid>{F1B15189-3BA6-4C60-8D99-B88BF0382E67}</ProjectGuid>
     <TemplateGuid>{dd38f7fc-d7bd-488b-9242-7d8754cde80d}</TemplateGuid>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <Configuration>Debug</Configuration>
     <Platform Condition="'$(Platform)' == ''">Win32</Platform>
-    <RootNamespace>CreateDevice</RootNamespace>
-    <ProjectName>2_CreateDevice</ProjectName>
+    <RootNamespace>Symbol</RootNamespace>
+    <ProjectName>3_Symbol</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -134,13 +134,13 @@
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <Inf Include="CreateDevice.inf" />
+    <Inf Include="Symbol.inf" />
   </ItemGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mian.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
